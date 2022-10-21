@@ -1,0 +1,18 @@
+.cuerpo{
+
+  background-color: aquamarine;
+}
+.barra{
+    text-align: right;
+}
+.bienvenido{
+    font-size: 60px;
+    text-align: center;
+}
+.contenedor-imagenes {
+    display: flex;
+  }
+  
+  .contenedor-imagenes img:first-child {
+    margin-right: 10px;
+  }

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Custom Icons Tutorial - Leaflet</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+	<style>
+		
+		.leaflet-container {
+			height: 1080px;
+			width: 500px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+<a href="mapImp.html"><button>Imperial</button> </a>
+</head>
+<body>
+	<div id='map' style>
+
+		
+
+	
+	</div style="text-align:center;">
+
+	<div>
+		<h5></h5>
+	</div>
+<script>
+var locations = [
+  ["Supermercado El trebol", -38.71065, -72.55933],
+  ["Supermercado Santa Isabel", -38.73712, -72.59665],
+  ["Unimarc AV San martin", -38.73909, -72.61146],
+  ["Jumbo AV alemania", -38.73452, -72.61051],
+  ["Supermercado AV Luis Durand", -38.72509, -72.62970],
+  ["Lider Express ", -38.7183, -72.5657],
+  ["Lider Walmart Prieto", -38.72894, -72.60039],
+  ["Lider Vecino", -38.73489, -72.64164],
+  ["Lider Express Amanecer", -38.72509, -72.62970],
+  ["MiniMarket Oasis", -38.74888, -72.63636]
+];
+
+var map = L.map('map').setView([-38.7266, -72.5817], 12);
+mapLink =
+  '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+L.tileLayer(
+  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; ' + mapLink + ' Contributors',
+    maxZoom: 18,
+  }).addTo(map);
+
+ 
+for (var i = 0; i < locations.length; i++) {
+  marker = new L.marker([locations[i][1], locations[i][2]])
+    .bindPopup(locations[i][0])
+	.addTo(map);
+	
+}
+        
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/*.cont__formulario {
+  display: grid;
+  background-color: aqua;
+  justify-content: center; /*horizontal
+  align-content: center; /*vertical
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(sig.css);
+form {
+  background: rgba(244, 244, 247, 0.781);
+  padding: 40px 0;
+  border-radius: 5px;
+}
+.form {
+  width: 100%;
+
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.form .card__group--input {
+  position: relative;
+  margin: 30px;
+}
+.card__titulo {
+  font-family: "Patua One", sans-serif;
+  text-align: center;
+}
+.card__group--input {
+  font-family: Verdana, Tahoma, sans-serif;
+}
+.buttons{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.button {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  width: 35%;
+  background: rgba(34, 98, 151, 0.356) ;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  transition: .3s ease all;
+  border-radius: 5px;
+  position: relative;
+  
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+  color: rgb(20, 107, 220);
+}
+a:hover{
+  transition: .5s ease all;
+  color: aquamarine;
+}
+a:active{
+  color: rgb(20, 107, 220);
+}

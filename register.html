@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Form_Uno</title>
+    <link id="estilos" rel='stylesheet' type='text/css' href='../Styles/import.css'>
+    <link id="estilos" rel='stylesheet' type='text/css' href='css/import.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <main>
+
+    <form action="./register.php" class="form" id="formulary" method="post" style="text-align: center">
+        <div class="card">
+            <!-- Class padre -->
+            <div class="card__titulo">
+                <a href="#"><h1 class="texto__titulo">Registro</h1></a>
+            </div>
+
+            <div class="card__group--input">
+                <input type="text" name="rut" id="Rut" required><span class="bar--input"></span>
+                <label for="">Tu Rut</label>
+            </div>
+            <div class="card__group--input">
+                <input type="text" name="name" id="name" required><span class="bar--input"></span>
+                <label for="">Tu nombre</label>
+            </div>
+
+            <div class="card__group--input">
+                <input type="text" name="edad" id="edad" required><span class="bar--input"></span>
+                <label for="">Tu edad</label>
+            </div>
+            <div class="card__group--input">
+                <input type="text" name="direccion" id="direccion" required><span class="bar--input"></span>
+                <label for="">Tu direccion</label>
+            </div>
+            
+            <div class="card__group--input">
+                <input type="email" name="correo" id="correo" required><span class="bar--input"></span>
+                <label for="">Tu correo</label>
+            </div>
+            <div class="card__group--input">
+                <input type="password" name="pass" id="pass" required><span class="bar--input"></span>
+                <label for="">Tu Contraseña</label>
+            </div>
+
+            <div class="card__group--input">
+                <select class="control" name="grupo">
+                    <option disabled selected class="black"> ------Seleccione------ </option>
+                    <option class="black" value="cliente">Comprador</option>
+                    <option class="black" value="proveedor">Proveedor</option>
+                </select>
+                <label for="">¿Que seras en la app?</label>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="button button--sig"><span>Registrarme</span></button>
+            </div>
+        </div>
+    </form>
+</main>
+      
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

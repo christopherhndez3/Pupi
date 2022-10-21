@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>PuPi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/background.png");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">PuPi</a>
+
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">PuPi</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Nuestro equipo</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>contactanos</a>
+      <a href="./login.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>Inicia o registrate</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">cerrar ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">PuPi</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Nuestro equipo</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">contactanos</a>
+  <a href="./login.html" onclick="w3_close()" class="w3-bar-item w3-button">Inicia o registrate</a>
+</nav>
+
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small" style="color: green">Convierte en puper y comienza a colaborar!</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Que somos y nuestra mision</a></p>
+  </div> 
+
+</header>
+
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">¿Que es PuPi?</h3>
+  <p class="w3-center w3-large">Proyecto que busca ayudar a frenar el desperdicio de alimentos en chile, que  busca a su vez fomentar conciencia sobre el problema endemico que acompleja el desperdicio de alimentos aun sin su fecha limite de caducidad y a la vez tender una mano a cuyas personas las cuales quieran pagar menos por un alimento</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+  </div>
+</div>
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Nuestro Equipo de trabajo</h3>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom" style="float:center">
+      <div class="w3-card" style="float: right">
+        <div class="w3-container">
+          <h3>Christopher Hernandez</h3>
+          <p class="w3-opacity">CEO & Fundador</p>
+          <p>Estudiante de Analista Programador en su ultimo año de carrera, amante de la programacion, aficionado en el area de ciberseguridad y emprendedor</p>
+         <a href="https://github.com/christopherhndez3"><p><button class="w3-button w3-light-grey w3-block"></i> Visitame</button></p></a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="float: right">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Omar Barria</h3>
+          <p class="w3-opacity">Fundador</p>
+          <p>Estudiante de Analista Programador en su ultimo año de carrera, enamorado de la programacion y el aire libre</p>
+          <a href="https://github.com/OmarJBar"><p><button class="w3-button w3-light-grey w3-block"></i> Visitame</button></p></a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom"></div>
+    <div class="w3-col l3 m6 w3-margin-bottom"></div>
+    <div class="w3-col l3 m6 w3-margin-bottom"></div>
+    <div class="w3-col l3 m6 w3-margin-bottom"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">Contacto</h3>
+  <p class="w3-center w3-large">Tienes alguna inquietud o quieres reportar algun error de funcionamiento? escribenos y responderemos a la brevedad</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>info@pupi.cl</p>
+    <br>
+    <form action="duda.php" method="post" >
+      <p><input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Correo"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="asunto" required name="Tema"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Mensaje"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> Enviar Correo
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Hacia arriba</a>
+  <p>Desarrollado por <a href="https://github.com/christopherhndez3"  target="_blank" class="w3-hover-text-green">Christopher Hernandez</a></p>
+</footer>
+ 
+<script>
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

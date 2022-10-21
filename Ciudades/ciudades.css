@@ -1,0 +1,21 @@
+.map{
+    height: 500px;
+	width: 500px;
+}
+.obtener{
+    position: absolute;
+    right: 100px;
+  
+}
+.botones{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+}
+.barra{
+    justify-content: right;
+    position: absolute;
+    text-align: right;
+    display: inline-flex;
+}
